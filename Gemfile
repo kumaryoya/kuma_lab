@@ -12,6 +12,7 @@ gem 'gretel'
 gem 'importmap-rails'
 gem 'jbuilder'
 gem 'meta-tags'
+gem 'pg'
 gem 'puma', '~> 5.0'
 gem 'ransack'
 gem 'rubocop', require: false
@@ -29,7 +30,6 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
-  gem 'sqlite3', '~> 1.4'
 end
 
 group :development do
@@ -45,8 +45,4 @@ group :test do
   gem 'selenium-webdriver'
   gem 'spring-commands-rspec'
   gem 'webdrivers'
-end
-
-group :production do
-  gem 'pg'
 end
