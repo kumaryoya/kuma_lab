@@ -1,20 +1,19 @@
 default: &default
-  adapter: sqlite3
+  adapter: postgresql
+  encoding: unicode
+  host: db
+  username: user
+  password: password
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  timeout: 5000
 
 development:
   <<: *default
-  database: db/development.sqlite3
+  database: kuma_lab_development
 
 test:
   <<: *default
-  database: db/test.sqlite3
+  database: kuma_lab_test
 
 production:
   <<: *default
-  adapter: postgresql
-  encoding: unicode
-  database: kuma_lab
-  username: kuma_lab
   url: <%= ENV['DATABASE_URL'] %>
