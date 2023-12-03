@@ -1,9 +1,6 @@
 # くまらぼ  
 <img src="app/assets/images/logo.webp" width="500x300">  
   
-## サービスURL  
-https://www.kumalab.top/  
-  
 ## 技術選定  
 * Ruby 3.2.2  
 * Rails 7.0.8  
